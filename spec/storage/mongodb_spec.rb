@@ -27,8 +27,8 @@ describe Vines::Storage::MongoDB do
           }
         }
       })
-      db.collection(:vcards).save({'_id' => 'full@wonderland.lit', 'card' => VCARD.to_xml})
-      db.collection(:fragments).save({'_id' => "full@wonderland.lit:#{FRAGMENT_ID}", 'xml' => FRAGMENT.to_xml})
+      db.collection(:vcards).save({'_id' => 'full@wonderland.lit', 'card' => vcard.to_xml})
+      db.collection(:fragments).save({'_id' => "full@wonderland.lit:#{fragment_id}", 'xml' => fragment.to_xml})
     end
   end
 
@@ -42,7 +42,7 @@ describe Vines::Storage::MongoDB do
       database 'xmpp_testcase'
     end
     def storage.db
-      MongoDBTest::MOCK_MONGO
+      MOCK_MONGO
     end
     storage
   end
