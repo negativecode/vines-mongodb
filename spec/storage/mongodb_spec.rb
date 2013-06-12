@@ -48,7 +48,7 @@ describe Vines::Storage::MongoDB do
   end
 
   describe 'creating a new instance' do
-    it 'raises with no database' doe
+    it 'raises with no database' do
       fibered do
         -> { Vines::Storage::MongoDB.new {} }.must_raise RuntimeError
       end
