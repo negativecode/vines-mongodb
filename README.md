@@ -2,7 +2,7 @@
 
 Vines is a scalable XMPP chat server, using EventMachine for asynchronous IO.
 This gem provides support for storing user data in
-[MongoDB](http://mongodb.com/).
+[MongoDB](http://www.mongodb.org/).
 
 Additional documentation can be found at [getvines.org](http://www.getvines.org/).
 
